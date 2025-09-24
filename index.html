@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiddenIndia - Discover Unexplored India with Local Guides</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+     
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>HiddenIndia</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#" class="nav-link" data-page="home">Home</a>
+                <a href="#" class="nav-link" data-page="explore">Explore</a>
+                <a href="#" class="nav-link" data-page="tourist-auth">Tourist Login</a>
+                <a href="#" class="nav-link" data-page="guide-auth">Guide Login</a>
+                <a href="#" class="nav-link" data-page="badges">Badges</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="app">
+        
+        <div id="home-page" class="page active">
+            
+            <section class="hero">
+                <div class="hero-background">
+                    <div class="hero-overlay"></div>
+                </div>
+                <div class="hero-content">
+                    <div class="container">
+                        <div class="hero-text">
+                            <h1 class="hero-title">Discover Unexplored India with Local Guides</h1>
+                            <p class="hero-subtitle">Experience authentic India through the eyes of passionate locals who know every hidden gem, secret trail, and untold story.</p>
+                            <div class="hero-buttons">
+                                <button class="btn btn-primary" data-page="explore">Explore Places</button>
+                                <button class="btn btn-secondary" data-page="tourist-auth">Sign Up as Tourist</button>
+                                <button class="btn btn-outline" data-page="guide-auth">Become a Guide</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-scroll">
+                    <span>Scroll to discover</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </section>
+
+   
+            <section class="featured-destinations">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Hidden Gems Waiting to be Explored</h2>
+                        <p>Discover India's best-kept secrets with local guides who call these places home</p>
+                    </div>
+                    <div class="destinations-grid" id="featured-destinations">
+                         Destinations will be loaded dynamically 
+                    </div>
+                </div>
+            </section>
+
+          
+            <section class="about">
+                <div class="container">
+                    <div class="about-content">
+                        <div class="about-text">
+                            <h2>Connecting Travelers with Authentic Experiences</h2>
+                            <p>HiddenIndia bridges the gap between curious travelers and passionate local guides. Our platform enables authentic cultural exchanges while supporting local communities across India's most unexplored regions.</p>
+                            <div class="about-features">
+                                <div class="feature">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-map-marked-alt"></i>
+                                    </div>
+                                    <div class="feature-text">
+                                        <h4>Verified Local Guides</h4>
+                                        <p>Every guide is vetted and lives in the area they represent</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <div class="feature-text">
+                                        <h4>Safe & Secure</h4>
+                                        <p>All experiences are insured with 24/7 support</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <div class="feature-text">
+                                        <h4>Support Local Communities</h4>
+                                        <p>Your journey directly benefits local families and preserves culture</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-image">
+                            <img src="/placeholder.svg?height=400&width=500" alt="Local guide with tourists">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+         
+            <section class="testimonials">
+                <div class="container">
+                    <h2>Stories from Fellow Explorers</h2>
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"Rajesh showed us hidden waterfalls in Kerala that I never would have found on my own. It felt like discovering a secret world."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="/placeholder.svg?height=60&width=60" alt="Sarah">
+                                <div>
+                                    <h4>Sarah Johnson</h4>
+                                    <span>Germany</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"The cultural immersion was incredible. We learned traditional cooking, participated in local festivals, and made lifelong friends."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="/placeholder.svg?height=60&width=60" alt="James">
+                                <div>
+                                    <h4>James Mitchell</h4>
+                                    <span>Australia</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"As a guide, this platform has allowed me to share my homeland's beauty while supporting my family. It's truly life-changing."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="/placeholder.svg?height=60&width=60" alt="Priya">
+                                <div>
+                                    <h4>Priya Sharma</h4>
+                                    <span>Local Guide, Himachal Pradesh</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="explore-page" class="page">
+            <section class="explore-hero">
+                <div class="container">
+                    <h1>Explore Hidden Destinations</h1>
+                    <p>Filter by your interests and discover India's best-kept secrets</p>
+                </div>
+            </section>
+
+            <section class="explore-content">
+                <div class="container">
+                    <div class="explore-filters">
+                        <button class="filter-btn active" data-filter="all">All Destinations</button>
+                        <button class="filter-btn" data-filter="mountains">Mountains</button>
+                        <button class="filter-btn" data-filter="cultural">Cultural Villages</button>
+                        <button class="filter-btn" data-filter="forests">Forests</button>
+                        <button class="filter-btn" data-filter="coastal">Coastal</button>
+                        <button class="filter-btn" data-filter="spiritual">Spiritual</button>
+                    </div>
+
+                    <div class="destinations-grid" id="all-destinations">
+                         All destinations will be loaded dynamically 
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="tourist-auth-page" class="page">
+            <div class="auth-container">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="tourist-login">Login</button>
+                    <button class="auth-tab" data-tab="tourist-signup">Sign Up</button>
+                </div>
+
+             
+                <div id="tourist-login" class="auth-form active">
+                    <h2>Welcome Back, Explorer!</h2>
+                    <form class="form" id="tourist-login-form">
+                        <div class="form-group">
+                            <label for="tourist-email">Email</label>
+                            <input type="email" id="tourist-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tourist-password">Password</label>
+                            <input type="password" id="tourist-password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign In</button>
+                    </form>
+                </div>
+
+              
+                <div id="tourist-signup" class="auth-form">
+                    <h2>Start Your Journey</h2>
+                    <form class="form" id="tourist-signup-form">
+                        <div class="form-group">
+                            <label for="tourist-name">Full Name</label>
+                            <input type="text" id="tourist-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tourist-signup-email">Email</label>
+                            <input type="email" id="tourist-signup-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tourist-signup-password">Password</label>
+                            <input type="password" id="tourist-signup-password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tourist-preferences">Travel Preferences</label>
+                            <select id="tourist-preferences" multiple>
+                                <option value="adventure">Adventure</option>
+                                <option value="culture">Cultural Experiences</option>
+                                <option value="nature">Nature & Wildlife</option>
+                                <option value="spiritual">Spiritual Journeys</option>
+                                <option value="photography">Photography</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="tourist-profile-pic">Profile Picture</label>
+                            <input type="file" id="tourist-profile-pic" accept="image/*">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Join HiddenIndia</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="guide-auth-page" class="page">
+            <div class="auth-container">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="guide-login">Login</button>
+                    <button class="auth-tab" data-tab="guide-signup">Become a Guide</button>
+                </div>
+
+                 
+                <div id="guide-login" class="auth-form active">
+                    <h2>Welcome Back, Guide!</h2>
+                    <form class="form" id="guide-login-form">
+                        <div class="form-group">
+                            <label for="guide-email">Email</label>
+                            <input type="email" id="guide-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guide-password">Password</label>
+                            <input type="password" id="guide-password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign In</button>
+                    </form>
+                </div>
+
+              
+                <div id="guide-signup" class="auth-form">
+                    <h2>Share Your Hometown</h2>
+                    <form class="form" id="guide-signup-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guide-name">Full Name</label>
+                                <input type="text" id="guide-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guide-phone">Phone Number</label>
+                                <input type="tel" id="guide-phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="guide-signup-email">Email</label>
+                            <input type="email" id="guide-signup-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guide-signup-password">Password</label>
+                            <input type="password" id="guide-signup-password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guide-location">Location/Area You Guide</label>
+                            <input type="text" id="guide-location" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guide-experience">Years of Experience</label>
+                            <select id="guide-experience" required>
+                                <option value="">Select experience</option>
+                                <option value="0-1">0-1 years</option>
+                                <option value="2-5">2-5 years</option>
+                                <option value="5-10">5-10 years</option>
+                                <option value="10+">10+ years</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="guide-languages">Languages Known</label>
+                            <input type="text" id="guide-languages" placeholder="Hindi, English, Tamil..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guide-profile-pic">Profile Picture</label>
+                            <input type="file" id="guide-profile-pic" accept="image/*">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Become a Guide</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    
+        <div id="tourist-dashboard" class="page">
+            <div class="dashboard-container">
+                <div class="dashboard-header">
+                    <h1>Welcome back, Explorer!</h1>
+                    <button class="btn btn-outline" id="logout-btn">Logout</button>
+                </div>
+
+                <div class="dashboard-content">
+                    <div class="dashboard-sidebar">
+                        <div class="user-profile">
+                            <img src="/placeholder.svg?height=80&width=80" alt="Profile">
+                            <h3 id="tourist-name-display">Sarah Johnson</h3>
+                            <p>Adventure Seeker</p>
+                        </div>
+
+                        <nav class="dashboard-nav">
+                            <a href="#" class="nav-item active" data-section="profile">Profile</a>
+                            <a href="#" class="nav-item" data-section="bookings">My Trips</a>
+                            <a href="#" class="nav-item" data-section="badges">Badges</a>
+                        </nav>
+                    </div>
+
+                    <div class="dashboard-main">
+                       
+                        <div class="dashboard-section active" id="profile-section">
+                            <div class="section-header">
+                                <h2>Profile Overview</h2>
+                                <button class="btn btn-secondary" id="edit-profile-btn">Edit Profile</button>
+                            </div>
+                            <div class="profile-stats">
+                                <div class="stat-card">
+                                    <h3>12</h3>
+                                    <p>Places Explored</p>
+                                </div>
+                                <div class="stat-card">
+                                    <h3>8</h3>
+                                    <p>Guides Met</p>
+                                </div>
+                                <div class="stat-card">
+                                    <h3>5</h3>
+                                    <p>Badges Earned</p>
+                                </div>
+                            </div>
+                        </div>
+
+              
+                        <div class="dashboard-section" id="bookings-section">
+                            <h2>My Trips & Bookings</h2>
+                            <div class="bookings-list">
+                                <div class="booking-card">
+                                    <img src="/placeholder.svg?height=100&width=150" alt="Kerala">
+                                    <div class="booking-info">
+                                        <h4>Kerala Backwaters Secret Route</h4>
+                                        <p>with Rajesh Kumar</p>
+                                        <span class="booking-date">March 15-18, 2024</span>
+                                        <span class="booking-status completed">Completed</span>
+                                    </div>
+                                </div>
+                                <div class="booking-card">
+                                    <img src="/placeholder.svg?height=100&width=150" alt="Himachal">
+                                    <div class="booking-info">
+                                        <h4>Hidden Mountain Villages</h4>
+                                        <p>with Priya Sharma</p>
+                                        <span class="booking-date">April 20-25, 2024</span>
+                                        <span class="booking-status upcoming">Upcoming</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       
+                        <div class="dashboard-section" id="tourist-badges-section">
+                            <h2>Your Achievements</h2>
+                            <div class="badges-grid">
+                                <div class="badge-card earned">
+                                    <div class="badge-icon">
+                                        <i class="fas fa-mountain"></i>
+                                    </div>
+                                    <h4>Mountain Explorer</h4>
+                                    <p>Visited 5 mountain destinations</p>
+                                </div>
+                                <div class="badge-card earned">
+                                    <div class="badge-icon">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <h4>Culture Enthusiast</h4>
+                                    <p>Participated in 3 cultural experiences</p>
+                                </div>
+                                <div class="badge-card">
+                                    <div class="badge-icon">
+                                        <i class="fas fa-camera"></i>
+                                    </div>
+                                    <h4>Photo Master</h4>
+                                    <p>Share 50 photos (35/50)</p>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="guide-dashboard" class="page">
+            <div class="dashboard-container">
+                <div class="dashboard-header">
+                    <h1>Guide Dashboard</h1>
+                    <button class="btn btn-outline" id="guide-logout-btn">Logout</button>
+                </div>
+
+                <div class="dashboard-content">
+                    <div class="dashboard-sidebar">
+                        <div class="user-profile">
+                            <img src="/placeholder.svg?height=80&width=80" alt="Profile">
+                            <h3 id="guide-name-display">Rajesh Kumar</h3>
+                            <p>Local Guide</p>
+                            <div class="guide-rating">
+                                <span class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span>4.9 (124 reviews)</span>
+                            </div>
+                        </div>
+
+                        <nav class="dashboard-nav">
+                            <a href="#" class="nav-item active" data-section="guide-profile">Profile</a>
+                            <a href="#" class="nav-item" data-section="guide-bookings">Manage Bookings</a>
+                            <a href="#" class="nav-item" data-section="guide-badges">Badge Progress</a>
+                        </nav>
+                    </div>
+
+                    <div class="dashboard-main">
+                       
+                        <div class="dashboard-section active" id="guide-profile-section">
+                            <div class="section-header">
+                                <h2>Guide Profile</h2>
+                                <button class="btn btn-secondary" id="edit-guide-profile-btn">Edit Profile</button>
+                            </div>
+                            <div class="profile-stats">
+                                <div class="stat-card">
+                                    <h3>87</h3>
+                                    <p>Tours Completed</p>
+                                </div>
+                                <div class="stat-card">
+                                    <h3>124</h3>
+                                    <p>Happy Travelers</p>
+                                </div>
+                                <div class="stat-card">
+                                    <h3>4.9</h3>
+                                    <p>Average Rating</p>
+                                </div>
+                            </div>
+                        </div>
+
+                   
+                        <div class="dashboard-section" id="guide-bookings-section">
+                            <h2>Manage Bookings</h2>
+                            <div class="bookings-list">
+                                <div class="booking-card">
+                                    <img src="/placeholder.svg?height=60&width=60" alt="Tourist">
+                                    <div class="booking-info">
+                                        <h4>Sarah Johnson</h4>
+                                        <p>Kerala Backwaters Tour</p>
+                                        <span class="booking-date">April 20-23, 2024</span>
+                                        <span class="booking-status pending">Pending Confirmation</span>
+                                    </div>
+                                    <div class="booking-actions">
+                                        <button class="btn btn-small btn-primary">Accept</button>
+                                        <button class="btn btn-small btn-outline">Decline</button>
+                                    </div>
+                                </div>
+                                <div class="booking-card">
+                                    <img src="/placeholder.svg?height=60&width=60" alt="Tourist">
+                                    <div class="booking-info">
+                                        <h4>James Mitchell</h4>
+                                        <p>Cultural Village Experience</p>
+                                        <span class="booking-date">May 1-4, 2024</span>
+                                        <span class="booking-status confirmed">Confirmed</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-section" id="guide-badges-section">
+                            <h2>Your Guide Achievements</h2>
+                            <div class="badges-grid">
+                                <div class="badge-card earned">
+                                    <div class="badge-icon">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <h4>Super Guide</h4>
+                                    <p>Maintained 4.8+ rating for 6 months</p>
+                                </div>
+                                <div class="badge-card earned">
+                                    <div class="badge-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <h4>People's Choice</h4>
+                                    <p>Guided 100+ travelers</p>
+                                </div>
+                                <div class="badge-card">
+                                    <div class="badge-icon">
+                                        <i class="fas fa-medal"></i>
+                                    </div>
+                                    <h4>Legend Status</h4>
+                                    <p>Complete 200 tours (87/200)</p>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 43%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+        <div id="badges-page" class="page">
+            <section class="badges-hero">
+                <div class="container">
+                    <h1>Gamification & Achievements</h1>
+                    <p>Earn badges, climb the leaderboard, and showcase your exploration journey</p>
+                </div>
+            </section>
+
+            <section class="badges-content">
+                <div class="container">
+                    <div class="badges-tabs">
+                        <button class="badge-tab active" data-tab="all-badges">All Badges</button>
+                        <button class="badge-tab" data-tab="leaderboard">Leaderboard</button>
+                        <button class="badge-tab" data-tab="achievements">My Progress</button>
+                    </div>
+
+            
+                    <div id="all-badges" class="badges-section active">
+                        <div class="badges-categories">
+                            <div class="badge-category">
+                                <h3>Explorer Badges</h3>
+                                <div class="badges-grid">
+                                    <div class="badge-card">
+                                        <div class="badge-icon">
+                                            <i class="fas fa-mountain"></i>
+                                        </div>
+                                        <h4>Mountain Explorer</h4>
+                                        <p>Visit 5 mountain destinations</p>
+                                        <span class="badge-rarity rare">Rare</span>
+                                    </div>
+                                    <div class="badge-card">
+                                        <div class="badge-icon">
+                                            <i class="fas fa-water"></i>
+                                        </div>
+                                        <h4>Coastal Wanderer</h4>
+                                        <p>Explore 3 coastal hidden gems</p>
+                                        <span class="badge-rarity common">Common</span>
+                                    </div>
+                                    <div class="badge-card">
+                                        <div class="badge-icon">
+                                            <i class="fas fa-tree"></i>
+                                        </div>
+                                        <h4>Forest Guardian</h4>
+                                        <p>Visit 4 forest sanctuaries</p>
+                                        <span class="badge-rarity uncommon">Uncommon</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="badge-category">
+                                <h3>Community Badges</h3>
+                                <div class="badges-grid">
+                                    <div class="badge-card">
+                                        <div class="badge-icon">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <h4>Local Hero</h4>
+                                        <p>Support 10 local communities</p>
+                                        <span class="badge-rarity epic">Epic</span>
+                                    </div>
+                                    <div class="badge-card">
+                                        <div class="badge-icon">
+                                            <i class="fas fa-handshake"></i>
+                                        </div>
+                                        <h4>Culture Bridge</h4>
+                                        <p>Connect with 15 local guides</p>
+                                        <span class="badge-rarity rare">Rare</span>
+                                    </div>
+                                    <div class="badge-card">
+                                        <div class="badge-icon">
+                                            <i class="fas fa-share"></i>
+                                        </div>
+                                        <h4>Story Teller</h4>
+                                        <p>Share 25 travel stories</p>
+                                        <span class="badge-rarity uncommon">Uncommon</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+              
+                    <div id="leaderboard" class="badges-section">
+                        <div class="leaderboard-container">
+                            <h3>Top Explorers This Month</h3>
+                            <div class="leaderboard-list">
+                                <div class="leaderboard-item top-1">
+                                    <div class="rank">1</div>
+                                    <img src="/placeholder.svg?height=50&width=50" alt="Explorer">
+                                    <div class="user-info">
+                                        <h4>Adventure_Sarah</h4>
+                                        <p>12 destinations this month</p>
+                                    </div>
+                                    <div class="points">2,840 pts</div>
+                                </div>
+                                <div class="leaderboard-item top-2">
+                                    <div class="rank">2</div>
+                                    <img src="/placeholder.svg?height=50&width=50" alt="Explorer">
+                                    <div class="user-info">
+                                        <h4>Mountain_Mike</h4>
+                                        <p>8 destinations this month</p>
+                                    </div>
+                                    <div class="points">2,120 pts</div>
+                                </div>
+                                <div class="leaderboard-item top-3">
+                                    <div class="rank">3</div>
+                                    <img src="/placeholder.svg?height=50&width=50" alt="Explorer">
+                                    <div class="user-info">
+                                        <h4>Culture_Queen</h4>
+                                        <p>6 destinations this month</p>
+                                    </div>
+                                    <div class="points">1,980 pts</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                
+                    <div id="achievements" class="badges-section">
+                        <div class="progress-overview">
+                            <h3>Your Achievement Progress</h3>
+                            <div class="progress-stats">
+                                <div class="progress-stat">
+                                    <h4>5/12</h4>
+                                    <p>Badges Earned</p>
+                                </div>
+                                <div class="progress-stat">
+                                    <h4>1,240</h4>
+                                    <p>Total Points</p>
+                                </div>
+                                <div class="progress-stat">
+                                    <h4>#47</h4>
+                                    <p>Your Rank</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+     
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>HiddenIndia</h3>
+                    <p>Connecting travelers with authentic local experiences across India's most beautiful hidden destinations.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>For Travelers</h4>
+                    <ul>
+                        <li><a href="#">Find Guides</a></li>
+                        <li><a href="#">Book Experiences</a></li>
+                        <li><a href="#">Safety Guidelines</a></li>
+                        <li><a href="#">Travel Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>For Guides</h4>
+                    <ul>
+                        <li><a href="#">Become a Guide</a></li>
+                        <li><a href="#">Guide Resources</a></li>
+                        <li><a href="#">Earnings</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HiddenIndia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal" id="destination-modal">
+            <div class="modal-header">
+                <h3 id="modal-title">Destination Details</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                 Content will be loaded dynamically 
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
