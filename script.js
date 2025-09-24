@@ -36,7 +36,7 @@ class HiddenIndiaApp {
         name: "Secret Waterfalls of Meghalaya",
         description: "Hidden cascades nestled in untouched forests, known only to local tribes.",
         category: "forests",
-        image: "/meghalaya-secret-waterfall.jpg",
+        image: "meghalaya-secret-waterfall.jpg",
         guide: "Ravi Khasi",
         rating: 4.9,
         price: 3500,
@@ -47,7 +47,7 @@ class HiddenIndiaApp {
         name: "Ancient Villages of Kinnaur",
         description: "Discover 1000-year-old settlements in the high Himalayas with traditional architecture.",
         category: "mountains",
-        image: "/kinnaur-ancient-mountain-village.jpg",
+        image: "kinnaur-ancient-mountain-village.jpg",
         guide: "Tenzin Negi",
         rating: 4.8,
         price: 4200,
@@ -58,7 +58,7 @@ class HiddenIndiaApp {
         name: "Lost Temples of Hampi Outskirts",
         description: "Unexplored ruins and temples beyond the famous Hampi circuit.",
         category: "cultural",
-        image: "/hidden-hampi-temple-ruins.jpg",
+        image: "hidden-hampi-temple-ruins.jpg",
         guide: "Lakshmi Devi",
         rating: 4.7,
         price: 2800,
@@ -69,7 +69,7 @@ class HiddenIndiaApp {
         name: "Secret Beaches of Gokarna",
         description: "Pristine coastline accessible only by boat or hidden trails.",
         category: "coastal",
-        image: "/gokarna-secret-beach.jpg",
+        image: "gokarna-secret-beach.jpg",
         guide: "Suresh Naik",
         rating: 4.9,
         price: 3200,
@@ -80,7 +80,7 @@ class HiddenIndiaApp {
         name: "Monastery Trail in Spiti",
         description: "Ancient monasteries connected by forgotten paths in the high desert.",
         category: "spiritual",
-        image: "/spiti-hidden-monastery.jpg",
+        image: "spiti-hidden-monastery.jpg",
         guide: "Lobsang Dorje",
         rating: 4.8,
         price: 5000,
@@ -91,7 +91,7 @@ class HiddenIndiaApp {
         name: "Tribal Villages of Bastar",
         description: "Experience authentic tribal culture in remote Chhattisgarh villages.",
         category: "cultural",
-        image: "/bastar-tribal-village.jpg",
+        image: "bastar-tribal-village.jpg",
         guide: "Mangal Singh",
         rating: 4.6,
         price: 3800,
@@ -316,7 +316,7 @@ class HiddenIndiaApp {
       name: "Sarah Johnson",
       email: email,
       type: "tourist",
-      avatar: "/tourist-profile-avatar.jpg",
+      avatar: "tourist-profile-avatar.jpg",
     }
     this.userType = "tourist"
 
@@ -335,7 +335,7 @@ class HiddenIndiaApp {
       name: name,
       email: email,
       type: "tourist",
-      avatar: "/tourist-profile-avatar.jpg",
+      avatar: "tourist-profile-avatar.jpg",
     }
     this.userType = "tourist"
 
@@ -358,7 +358,7 @@ class HiddenIndiaApp {
       name: "Rajesh Kumar",
       email: email,
       type: "guide",
-      avatar: "/indian-guide-profile-avatar.jpg",
+      avatar: "indian-guide-profile-avatar.jpg",
     }
     this.userType = "guide"
 
@@ -379,7 +379,7 @@ class HiddenIndiaApp {
       email: email,
       type: "guide",
       location: location,
-      avatar: "/indian-guide-profile-avatar.jpg",
+      avatar: "indian-guide-profile-avatar.jpg",
     }
     this.userType = "guide"
 
